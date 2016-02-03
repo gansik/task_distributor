@@ -35,12 +35,18 @@ Requirements
 Installation
 ------------
 
-To prepare data files (employees.csv, tasks.csv) please run:
+To prepare random dataset please run:
 
-`./test_data_generator.py`
+```./create_random_dataset.py
+```
+
+It will create two files: `data/employees.csv` and `data/tasks.csv`
 
 
 Run
 ---
 
-Just run `task_distributor.py`
+Just run
+
+```./task_distributor.py
+```

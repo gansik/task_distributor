@@ -123,28 +123,16 @@ class TaskDistributor(object):
 
 if __name__ == '__main__':
 
-    """ Initialize from random data
-    """
-    """
-    import string
-    import random
-    from test_data_generator import get_random_name, get_random_phrase
-
-    tasks = [ Task(get_random_phrase('TASK %d: ' % i), random.randint(1, 11)) for i in range(100) ]
-    employees = [ Employee(get_random_name(), random.randint(20, 50)) for i in range(30) ]
-    """
-
-
-    """ Initialize from files employees.csv and tasks.csv.
+    """ Initialize from files data/employees.csv and data/tasks.csv.
     """
     employees = []
-    with open('employees.csv', "r") as f:
+    with open('data/employees.csv', "r") as f:
         for line in f:
             if '\t' in line:
                 employees.append(Employee(*line.split('\t')))
 
     tasks = []
-    with open('tasks.csv', "r") as f:
+    with open('data/tasks.csv', "r") as f:
         for line in f:
             if '\t' in line:
                 tasks.append(Task(*line.split('\t')))
