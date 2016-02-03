@@ -35,18 +35,25 @@ Requirements
 Installation
 ------------
 
-To prepare random dataset please run:
+To prepare random dataset please run
 
-```./create_random_dataset.py
-```
+::
+    ./create_random_dataset.py
+
 
 It will create two files: `data/employees.csv` and `data/tasks.csv`
 
 
+
+Run tests
+---------
+
+::
+    ./tests.py TestTaskDistributor
+
 Run
 ---
 
-Just run
+::
+    ./task_distributor.py
 
-```./task_distributor.py
-```
